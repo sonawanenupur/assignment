@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 6, 2017 4:57:03 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="hello.Info" table="info" catalog="final" optimistic-lock="version">
+        <id name="firstName" type="string">
+            <column name="First_Name" length="11" />
+            <generator class="assigned" />
+        </id>
+        <property name="lastName" type="string">
+            <column name="Last_Name" not-null="true" />
+        </property>
+        <property name="email" type="string">
+            <column name="email" not-null="true" />
+        </property>
+        <property name="phone" type="string">
+            <column name="Phone" not-null="true" />
+        </property>
+        <property name="location" type="string">
+            <column name="location" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
