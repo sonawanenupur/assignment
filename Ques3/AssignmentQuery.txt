@@ -1,0 +1,1 @@
+﻿Select d.Dname, count(e.EmpNo)as Number_of_Employees from department d join employee e on d.DeptNo=e.deptNo group by d.DeptNo,d.Dname;   
